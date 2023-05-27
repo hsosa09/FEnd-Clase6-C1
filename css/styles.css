@@ -19,24 +19,34 @@
 
 .contenedor-logo-categorias {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgb(240, 168, 62);
     align-items: center;
     height: 100px;
 }
 
-.plato{
+
+
+
+
+
+.plato-png{
     background-image: url("../img/plato.png");
-    background-size: cover;
     background-color: #cccccc;
-    height: 500px;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+
 }
 
-.plato-der{
-    align-items: center;
-}
+
+
+
+
+
+
+
 
 
 .suscribete {
@@ -46,22 +56,32 @@
     background-color: rgb(240, 168, 62);
 }
 
-.contact{
+.contact {
     display: flex;
     background-color: rgb(60, 35, 19);
+    justify-content: space-between;
 }
 
 .contacto-izq- {
     display: flex;
     align-items: center;
     color: white;
+    margin-left: 30px;
 }
+
 
 .contacto-der {
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     align-items: center;
+    margin-right: 30px;
 }
+
+
+
+
+
+
 
 .derechosReservados{
     display: flex;
@@ -70,4 +90,28 @@
     align-items: center;
     color: white;
     height: 30px;
+}
+
+.productosDestacados-objetos {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.productosDestacados-objetos>span{
+    background-color: rgb(251, 249, 245);
+}
+
+.productosDestacados-pataYtitulo{
+    font-size: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productosDestacados-subtitulo{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 30%;
+    padding-right: 30%;
 }

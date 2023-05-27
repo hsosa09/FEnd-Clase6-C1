@@ -1,0 +1,73 @@
+.contenedor-head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    color: white;
+    height: 30px;
+    align-items: center;
+}
+
+.contenedor-head-izq {
+    text-align: left;
+    margin-left: 120px;
+}
+
+.contenedor-head-der {
+    text-align: right;
+    margin-right: 120px;
+}
+
+.contenedor-logo-categorias {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 168, 62);
+    align-items: center;
+    height: 100px;
+}
+
+.plato{
+    background-image: url("../img/plato.png");
+    background-size: cover;
+    background-color: #cccccc;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plato-der{
+    align-items: center;
+}
+
+
+.suscribete {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(240, 168, 62);
+}
+
+.contact{
+    display: flex;
+    background-color: rgb(60, 35, 19);
+}
+
+.contacto-izq- {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.contacto-der {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.derechosReservados{
+    display: flex;
+    background-color: rgb(34, 34, 34);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+}

@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -12,8 +15,8 @@
     <header>
         <section>
                 <nav class="contenedor-head">
-                    <span class="contenedor-head-izq">Grandes ofertas en comederos</span>
-                    <span class="contenedor-head-der">
+                    <span>Grandes ofertas en comederos</span>
+                    <span>
                         <select>
                             <option value="Español">Español</option>
                         </select>
@@ -26,11 +29,23 @@
         <section>
             <nav class="contenedor-logo-categorias">
                 <img src="img/Logo.png" alt="logo">
-                <span>
-                    <i class="fa-solid fa-paw">Categorías</i>
-                    <i class="fa-solid fa-paw">Pets</i>
-                    <i class="fa-solid fa-paw">Nosotros</i>
-                    <i class="fa-solid fa-paw">Contactanos</i>
+                <span class="contenedor-categorias-links">
+                    <span class="contenedor-categorias-links2">
+                        <i class="fa-solid fa-paw"></i>
+                        <p>Categorías</p>
+                    </span>
+                    <span class="contenedor-categorias-links2">
+                        <i class="fa-solid fa-paw"></i>
+                        <p>Pets</p>
+                    </span>
+                    <span class="contenedor-categorias-links2">
+                        <i class="fa-solid fa-paw"></i>
+                        <p>Nosotros</p>
+                    </span>
+                    <span class="contenedor-categorias-links2">
+                        <i class="fa-solid fa-paw"></i>
+                        <p>Contactanos</p>
+                    </span>
                 </span>
             </nav>
         </section>
@@ -38,14 +53,13 @@
     <main>
         <section>
             <span class="plato-png">
-                <span>
-                    <img src="img/plato.png" alt="">
-                </span>
-                <span>
-                    <h1>¡Es un placer tenerte aquí! </h1>
+                <article class="plato-png-cosas">
+                    <article class="plato-png-textogrande">
+                        <p>¡Es un placer tenerte aquí!</p>
+                    </article>
                     <p>¡Comederos en descuento!</p>
-                    <button>COMEDEROS</button>
-                </span>
+                    <button class="plato-png-boton">COMEDEROS</button>
+                </article>
             </span>
         </section>
 
@@ -83,17 +97,17 @@
                     <span>
                         <img src="img/carnes.png" alt="carnes">
                         <p>Juguete Churrasquito</p>
-                        <p>$150</p>
+                        <p class="productosDestacados-objetos-precio">$150</p>
                     </span>
                     <span>
                         <img src="img/comedero.png" alt="comedero">
                         <p>Comedero para perro</p>
-                        <p>$250</p>
+                        <p class="productosDestacados-objetos-precio">$250</p>
                     </span>
                     <span>
                         <img src="img/Huesito.png" alt="Huesito">
                         <p>Juguete Huesito</p>
-                        <p>$650</p>
+                        <p class="productosDestacados-objetos-precio">$650</p>
                     </span>
                 </span>
             </nav>
@@ -101,26 +115,39 @@
 
 
         </section>
-        <section>
-            <h1>Contáctanos</h1>
-            <p>Nombre y Apellido</p>
-            <p>Ingresá tu correo electrónico</p>
-            <p>Teléfono</p>
-            <button>Resetear</button>
-            <button>Enviar</button>
+        <section class="contactanos">
+            <span>
+            <h1 class="contactanos-titulo">Contáctanos</h1>
+            <span>
+                <p>Nombre y Apellido</p>
+            </span>
+                <span>
+                    <p>Ingresá tu correo electrónico</p>
+                </span>
+                <span>
+                    <p>Teléfono</p>
+                </span>
+            <article class="contactanos-botones">
+                <button class="contactanos-botones-button1">Resetear</button>
+                <button class="contactanos-botones-button2">Enviar</button>
+            </article>
         </section>
     </main>
     <footer>  
         <section class="suscribete-sec">
             <nav class="suscribete">
-                <span>&nbsp&nbsp&nbsp
-                    <a href="">
-                        <img src="img/enviar-correo 1.png" alt="Icono">
-                    </a>
-                <span>
-                </span>
-                </span>
-                <span>&nbsp&nbsp&nbsp&nbspSuscríbete para más novedades</span>
+                <article class="suscribete-izq">
+                    <span class="suscribete-izq-icono">
+                        <img src="img/enviar-correo 1.png" alt="">
+                    </span>
+                        <p class="suscribete-izq-icono-texto">Suscríbete para más novedades</p>
+                </article>
+                <article class="suscribete-der">
+                    <span class="suscribete-der-texto">
+                        <p>Ingresá tu correo electronico</p>
+                    </span>
+                    <button  class="suscribete-der-boton">Suscribirme</button>
+                </article>
             </nav>
         </section>
         <section>
@@ -130,40 +157,40 @@
                     <a href="">
                         <img src="img/Icono.png" alt="">
                     </a>
-                    <ul type="none">
-                        <li class="textobig">
-                        <p>Localidad</p>
-                        </li>
-                        <li class="textosmall">
-                        <p>Calle - provincia</p>
-                        </li>
-                    </ul>
+                        <ul type="none">
+                            <li class="textobig">
+                            <p>Localidad</p>
+                            </li>
+                            <li class="textosmall">
+                            <p>Calle - provincia</p>
+                            </li>
+                        </ul>
                     </span>
                     <span class="contacto-izq-">
                     <a href="">
                         <img src="img/Icono3.png" alt="">
                     </a>
-                    <ul type="none">
-                        <li class="textobig">
-                        <p>Teléfono</p>
-                        </li>
-                        <li class="textosmall">
-                        <p>Número de teléfono</p>
-                        </li>
-                    </ul>
+                        <ul type="none">
+                            <li class="textobig">
+                            <p>Teléfono</p>
+                            </li>
+                            <li class="textosmall">
+                            <p>Número de teléfono</p>
+                            </li>
+                        </ul>
                     </span>
                     <span class="contacto-izq-">
                     <a href="">
                         <img src="img/Icono (1).png" alt="">
                     </a>
-                    <ul type="none">
-                        <li class="textobig">
-                        <p>Correo Electrónico</p>
-                        </li>
-                        <li class="textosmall">
-                        <p>Dirección de correo</p>
-                        </li>
-                    </ul>
+                        <ul type="none">
+                            <li class="textobig">
+                            <p>Correo Electrónico</p>
+                            </li>
+                            <li class="textosmall">
+                            <p>Dirección de correo</p>
+                            </li>
+                        </ul>
                     </span>
                 </span>
                 <span class="contacto-der">

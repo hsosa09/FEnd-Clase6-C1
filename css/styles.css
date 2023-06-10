@@ -3,6 +3,15 @@
     margin: 0px;
     padding: 0px;
 }
+
+
+.menu-desplegable-media{
+    display: none;
+}
+
+
+
+
 .contenedor-head {
     display: flex;
     justify-content: space-around;
@@ -10,7 +19,17 @@
     color: white;
     height: 30px;
     align-items: center;
+    
 }
+
+body>header>section>nav>span>select{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+
+
+
 
 .contenedor-logo-categorias {
     display: flex;
@@ -104,11 +123,11 @@
 
 
 .productosDestacados-pataYtitulo{
-    font-size: 75px;
+    font-size: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-top: 20px;
 }
 
 .productosDestacados-subtitulo{
@@ -125,9 +144,6 @@
     justify-content: space-evenly;
     align-content: center;
     margin: 0px 25% 0px 25%;
-    
-    
-    
 }
 
 .productosDestacados-objetos>span{
@@ -226,19 +242,17 @@
     background: #F0A83E;
 }
 
-
-
 .suscribete-sec{
+    display: flex;
     background-color: rgb(240, 168, 62);
 }
-
 .suscribete{
     display: flex;
     justify-content: space-between;
     height: 60px;
     align-content: center;
     flex-wrap: wrap;
-
+    width: 100%;
 }
 .suscribete-izq {
     display: flex;
@@ -279,7 +293,6 @@
     flex-wrap: wrap;
     align-content: center;
     right: 10px;
-    position: relative;
 }
 .suscribete-der-texto>p{
     left:10px;
@@ -371,5 +384,74 @@
     line-height: 12px;
 }
 
+.contacto-der-media{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .contenedor-categorias-links, .contenedor-categorias-links2{
+        display: none;
+    }
+    .menu-desplegable-media{
+        display: flex;
+        background-color: transparent;
+        color: black;
+        border-color: transparent;
+        flood-color: #222222;
+    }
+    .plato-png-cosas{
+        align-items: flex-end;
+    }
+    .productosDestacados-subtitulo {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+        position: relative;
+        justify-content: space-evenly;
+    }
+    .productosDestacados-objetos {
+        align-content: center;
+        margin: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .productosDestacados-objetos-media{
+        margin-bottom: 30px;
+    }
+    .suscribete-sec {
+        display: flex;
+        height: 100px;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .suscribete{
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contacto-der{
+        display: none;
+    }
+    .contacto-der-media{
+        display: flex;
+        justify-content: center;
+    }
+    .contact{
+        justify-content: center;
+    }
+    .contactanos-botones>button{
+        width: 50%;
+        height: 34px;
+        border-radius: 15px;
+    }
+
+}
 
 
+.asdf{
+    color: black;
+}
